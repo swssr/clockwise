@@ -1,5 +1,4 @@
 use tauri::{
-    image::Image,
     tray::{MouseButtonState, TrayIcon, TrayIconBuilder, TrayIconEvent},
     AppHandle,
 };

@@ -20,8 +20,6 @@ fn main() {
         .setup(|app| {
             app.set_activation_policy(tauri::ActivationPolicy::Accessory);
 
-            let app_handle = app.app_handle();
-
             let tray = tray::create(app.app_handle())?;
 
            let tray_handle = tray.clone();
