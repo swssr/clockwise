@@ -9,6 +9,7 @@ use crate::fns::position_menubar_panel;
 pub fn create(app_handle: &AppHandle) -> tauri::Result<TrayIcon> {
     TrayIconBuilder::with_id("tray")
         .icon_as_template(true)
+        .show_menu_on_left_click(false)
         .on_tray_icon_event(|tray, event| {
             let app_handle = tray.app_handle();
 
